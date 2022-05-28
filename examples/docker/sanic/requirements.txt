@@ -1,3 +1,4 @@
 slack_bolt
 aiohttp>=3,<4
 sanic>=20,<21
+httpx>=0.23.0 # not directly required, pinned by Snyk to avoid a vulnerability
