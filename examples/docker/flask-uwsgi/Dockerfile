@@ -1,7 +1,7 @@
 #
 # docker build . -t your-repo/hello-bolt
 #
-FROM python:3.8.5-slim-buster as builder
+FROM python:3.11.0rc1-slim-buster as builder
 RUN apt-get update \
     && apt-get -y install build-essential libpcre3-dev \
     && apt-get clean
@@ -9,7 +9,7 @@ COPY requirements.txt /build/
 WORKDIR /build/
 RUN pip install -U pip && pip install -r requirements.txt
 
-FROM python:3.8.5-slim-buster as app
+FROM python:3.11.0rc1-slim-buster as app
 WORKDIR /app/
 COPY --from=builder /usr/local/bin/ /usr/local/bin/
 COPY --from=builder /usr/local/lib/ /usr/local/lib/
