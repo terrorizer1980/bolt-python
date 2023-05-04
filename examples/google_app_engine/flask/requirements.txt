@@ -1,2 +1,2 @@
 slack_bolt
-Flask>=1.1,<2
+Flask>=2.2.5,<2
