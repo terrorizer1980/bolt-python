@@ -1,2 +1,2 @@
 slack_bolt
-aiohttp>=3,<4
+aiohttp>=3.9.4,<4
