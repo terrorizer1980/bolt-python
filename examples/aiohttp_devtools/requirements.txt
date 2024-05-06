@@ -1,2 +1,2 @@
-aiohttp>=3,<4
+aiohttp>=3.9.4,<4
 aiohttp-devtools>=0.13,<0.14
