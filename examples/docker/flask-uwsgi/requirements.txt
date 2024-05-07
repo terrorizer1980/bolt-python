@@ -1,3 +1,4 @@
 slack_bolt
 Flask>1
 uWSGI>=2,<3
+werkzeug>=3.0.3 # not directly required, pinned by Snyk to avoid a vulnerability
